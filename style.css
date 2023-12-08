@@ -222,6 +222,13 @@ span {
     text-align: center;
 }
 
+footer {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+}
+
 
 
 
@@ -303,6 +310,11 @@ span {
 
     .row {
         padding: 20px;
+    }
+
+    footer {
+        margin-top: 50px;
+        position: relative;
     }
 
 }
