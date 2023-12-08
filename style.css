@@ -142,24 +142,16 @@ section {
 }
 
 .about {
-    display: grid;
+
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     align-items: center;
-    gap: 3rem;
-
+    gap: 5rem;
 }
 
-
-
-.about .visi-misi {
-    text-align: justify;
-}
 
 .about-img img {
     width: 100%;
     height: auto;
-
-
 }
 
 .about-text h2 {
@@ -167,16 +159,17 @@ section {
     font-size: var(--h2-font);
     font-weight: 800;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .about-text h5 {
     font-size: 22px;
     margin-bottom: 20px;
     line-height: 1.4;
+    text-align: center;
 }
 
 .about-text p {
-    width: 800px;
     line-height: 2px;
     text-align: center;
 }
@@ -225,5 +218,91 @@ span {
     font-size: var(--h2-font);
     font-weight: 800;
     margin-bottom: 10px;
+
     text-align: center;
+}
+
+
+
+
+/* media query ---------------------- */
+
+
+/* Tampilan untuk perangkat dengan lebar maksimum 768px (tampilan mobile) */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 10px 5%;
+    }
+
+    .navlist {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        padding: 10px;
+        z-index: 999;
+        display: none;
+        /* Sembunyikan daftar menu pada tampilan mobile */
+    }
+
+    .bx {
+        display: none;
+    }
+
+    .navlist.show {
+        display: flex;
+    }
+
+    .navlist a {
+        margin: 10px 0;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    section {
+        padding: 80px 5% 60px;
+    }
+
+    .home {
+        padding: 80px 5% 60px;
+    }
+
+    .hero-text h3 {
+        font-size: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .hero-text h4 {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-text p {
+        width: 100%;
+    }
+
+    .row {
+        padding: 20px;
+    }
+
 }
