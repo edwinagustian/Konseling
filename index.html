@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Konseling</title>
+
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- css styling  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icon -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- font awesome  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&family=Montserrat:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&family=Roboto:ital,wght@0,300;0,400;1,100&family=Work+Sans:wght@100;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header start  -->
+    <header>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <!-- header end  -->
+
+    <!-- hero section start  -->
+    <section class="home" id="Home">
+        <div class="hero-text">
+            <h3>WELCOME TO </h3>
+            <h1>Silaq B'Cerite</h1>
+            <h4>Konseling Teman Sebaya</h4>
+            <a href="" class="btn">Get Started</a>
+        </div>
+    </section>
+    <!-- hero section end  -->
+
+    <!-- about section start  -->
+    <section class="about" id="about">
+        <div class="about-img">
+
+        </div>
+
+        <div class=" about-text">
+            <h2>About Us</h2>
+            <h5>bimbingan Konseling <span>Teman Sebaya</span></h5>
+
+            <p>Konselor sebaya menurut Carr,R adalah seseorang yang terlatih dan
+                mendapat pengawasan untuk memberikan bantuan dan dukungan kepada
+                orang yang sama umurnya atau dalam hal yang lain.
+                Menurut Carr bimbingan konseling teman sebaya (Peer Counseling)
+                merupakan suatu cara bagi siswa/mahasiswa belajar bagaimana
+                memperhatikan dan membantu siswa/mahsiswa lain, serta menerapkannya
+                dalam kehidupan sehari-hari. Sementara itu, Tindall dan Gray
+                mendefinisikan konseling teman sebaya sebagai suatu ragam tingkah laku
+                membantu secara interpersonal yang dilakukan oleh individu
+                nonprofesional yang berusaha membantu orang lain.
+            </p>
+            <p>Konseling sebaya adalah program bimbingan yang dilakukan oleh
+                siswa terhadap siswa yang lainnya. Siswa yang menjadi pembimbing
+                sebelumnya diberikan latihan atau pembinaan oleh konselor. Siswa yang
+                menjadi pembimbing berfungsi sebagai mentor atau tutor yang membantu
+                siswa lain dalam memecahkan masalah yang dihadapinya, baik akademik
+                maupun non-akademik. Di samping itu dia juga berfungsi sebagai
+                mediator yang membantu konselor dengan cara memberikan informasi
+                tentang kondisi, perkembangan, atau masalah siswa yang perlu mendapat
+                layanan bantuan bimbingan atau konseling</p>
+        </div>
+    </section>
+    <!-- about section end  -->
+
+    <!-- service section start  -->
+    <section class="layanan" id="layanan">
+        <h2>Layanan</h2>
+        <p>Konseling Teman Sebaya</p>
+        </div>
+    </section>
+    <!-- service section end  -->
+
+    <!-- contact section start -->
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+    </section>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="pesan" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" onclick="kirim()">Kirim</button>
+            </form>
+        </div>
+        <!-- contact section end -->
+
+        <!-- js  -->
+
+        <script src="script.js"></script>
+
+        <!-- js  -->
+    </div>
+</body>
+
+</html>
