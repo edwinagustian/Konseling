@@ -26,6 +26,7 @@
         rel="stylesheet">
 </head>
 
+
 <body>
 
     <!-- header start  -->
@@ -121,6 +122,21 @@
         <!-- contact section end -->
 
         <!-- js  -->
+
+
+        <script>
+            document.getElementById("menu-icon").addEventListener("click", function () {
+                var navlist = document.querySelector(".navlist");
+                navlist.classList.toggle("show");
+            });
+        </script>
+
+
+        <script>
+            function kirim() {
+                alert("Pesan berhasil dikirim");
+            }
+        </script>
 
         <script src="script.js"></script>
 
