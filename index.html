@@ -47,7 +47,7 @@
             <h3>WELCOME TO </h3>
             <h1>Silaq B'Cerite</h1>
             <h4>Konseling Teman Sebaya</h4>
-            <a href="" class="btn">Get Started</a>
+            <a href="#layanan" class="btn">Get Started</a>
         </div>
     </section>
     <!-- hero section end  -->
@@ -134,6 +134,18 @@
             document.getElementById("menu-icon").addEventListener("click", function () {
                 var navlist = document.querySelector(".navlist");
                 navlist.classList.toggle("show");
+
+                event.stopPropagation();
+            });
+
+            document.addEventListener("click", function (event) {
+                var navlist = document.querySelector(".navlist");
+
+                // Periksa apakah yang diklik bukan bagian dari menu
+                if (!navlist.contains(event.target) && !document.getElementById("menu-icon").contains(event.target)) {
+                    // Tutup menu jika diklik di luar menu
+                    navlist.classList.remove("show");
+                }
             });
         </script>
 
